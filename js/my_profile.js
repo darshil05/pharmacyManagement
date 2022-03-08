@@ -75,7 +75,7 @@ function validatePassword(password) {
   xhttp.send();
   if(xhttp.responseText == "true")
     return true;
-//   return false;
+    return false;
 }
 
 function checkAdminPassword(password, error) {
