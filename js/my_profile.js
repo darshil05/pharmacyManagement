@@ -73,7 +73,7 @@ function validatePassword(password) {
   };
   xhttp.open("GET", "php/validateCredentials.php?action=validate_password&password=" + password, false);
   xhttp.send();
-  if(xhttp.responseText == "false")
+  if(xhttp.responseText == "true")
     return true;
 //   return false;
 }
