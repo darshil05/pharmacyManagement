@@ -73,9 +73,9 @@ function validatePassword(password) {
   };
   xhttp.open("GET", "php/validateCredentials.php?action=validate_password&password=" + password, false);
   xhttp.send();
-  if(xhttp.responseText == "true")
+  if(xhttp.responseText == "false")
     return true;
-  return false;
+//   return false;
 }
 
 function checkAdminPassword(password, error) {
